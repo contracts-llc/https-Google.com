@@ -32,7 +32,47 @@ Name Server: ns1.google.com
 Name Server: ns4.google.com
 Name Server: ns2.google.com
 DNSSEC: unsigned
-URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/{
+  "Status": 0 /* NOERROR */,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": true,
+  "CD": true,
+  "Question": [
+    {
+      "name": "google.",
+      "type": 1 /* A */
+    }
+  ],
+  "Authority": [
+    {
+      "name": "google.",
+      "type": 6 /* SOA */,
+      "TTL": 633,
+      "data": "ns-tld1.charlestonroadregistry.com. cloud-dns-hostmaster.google.com. 1 21600 3600 259200 900"
+    },
+    {
+      "name": "google.",
+      "type": 46 /* RRSIG */,
+      "TTL": 633,
+      "data": "soa 8 1 21600 1671137913 1669237113 65463 google. Wb7lpC1MxhdJfNw9z29W7q421DTtKYVBKLT0OoIYVUPTQEtaBmHwKpCprADBIrBaIxryDE3MAMdzrg2G2d3eFrdclW10Yjg1Ew45S9GG7TGTGnPhJ0uIUaJyf0BYse4CKar4WFNxgm7I2zKrZ/dPhTP7BtouMYnIfYeSGHDSFHo="
+    },
+    {
+      "name": "6he6tlhuem7men6ma7i8ar5p3voop367.google.",
+      "type": 50 /* NSEC3 */,
+      "TTL": 633,
+      "data": "1 0 1 379b1838b7824dd7 6R8IFT74N225N8S8L9NH7QV991UML2IU NS SOA RRSIG DNSKEY NSEC3PARAM"
+    },
+    {
+      "name": "6he6tlhuem7men6ma7i8ar5p3voop367.google.",
+      "type": 46 /* RRSIG */,
+      "TTL": 633,
+      "data": "nsec3 8 2 900 1671137913 1669237113 65463 google. WNEszMEE9/tOVYx47td2xG6CCkUYnH2ikOd+5XBHDJBvBgDiKuzy6+Cg+FthgGWPsqBkF5Wm9/mfghzfFcbS1ID6RzBzCHLvEzXLsr599eAGyuc+JDeokRctMHiSSnbenbd4gyQv8DQfv0jAp+nrfW2Iy0AGixRMTPZJAgeKAHQ="
+    }
+  ]
+}
+
 >>> Last update of WHOIS database: 2022-11-19T02:56:50+0000 <<<
 
 For more information on WHOIS status codes, please visit:
